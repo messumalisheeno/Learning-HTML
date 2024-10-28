@@ -8,19 +8,39 @@
 <body>
     <h1>This is main branch</h1>
     <form action="Backend.php">
-<div>NAME: <input type="text" name="MyName"></div>
-<br>    
-<div>ROLE: <input type="text" name="MyRole"></div>
+        <label for="name">NAME:</label>
+    <div><input type="text" name="MyName" id="name"></div>
 <br>
-<div>EMAIL: <input type="email" name="MyEmail"></div>
+<label for="role">ROLE:</label>    
+<div><input type="text" name="MyRole" id="role"></div>
 <br>
-<div>DATE: <input type="date" name="MyDate"></div>
+<label for="email">EMAIL:</label>
+<div><input type="email" name="MyEmail" id="email"></div>
 <br>
-<div>ELIGIBILITY: <input type="checkbox" name="MyEligibility"></div>
+<label for="date">DATE:</label>
+<div><input type="date" name="MyDate" id="date"></div>
 <br>
-<div>AGE: <input type="number" name="MyAge"></div>
+<label for="eligibility">ELIGIBILITY:</label>
+<div><input type="checkbox" name="MyEligibility" id="eligibility"></div>
 <br>
-<div>SUBMIT: <input type="submit" name="SUBMIT"></div>
+<label for="age">AGE:</label>
+<div><input type="number" name="MyAge" id="age"></div>
+<br>
+<label for="gender">MALE: FEMALE:</label>
+<br><div><input type="radio" name="mygender" id="gender"><input type="radio" name="mygender"></div>
+<br>
+<label for="textarea">Write About Yourself</label>
+<div><br><textarea name="mytextarea" id="textarea"></textarea></div>
+<br>
+<div><label for="car">CAR</label>
+    <select name="mycar" id="car">
+        <option value="indica">INDICA</option>
+        <option value="swift" selected>SWIFT</option>
+    </select></div>
+    <br>
+    <div><input type="submit" name="SUBMIT"></div>
+    <div><input type="reset" name="resetnow"></div>
+    
 
 </form>
 </body>
